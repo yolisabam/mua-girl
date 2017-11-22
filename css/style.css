@@ -235,3 +235,89 @@ nav {
   margin-bottom: 60px;
 }
 
+/* Media Queries -------------------- */
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  ul {
+    padding: 0px;
+    margin-top: 22px;
+  }
+  .main-header {
+    max-height: 500px;
+    padding: 10px 0 0;
+  }
+  .title {
+    font-size: 1.3rem;
+    border: none;
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 1.7;
+    text-align: ;
+  }
+  nav {
+    position: static;
+  }
+  a:link {
+  color: #000;
+  text-decoration: none;
+  }
+
+  a:visited {
+    color: #000;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  a:active {
+    color: #000;
+  }
+
+  .wrapper {
+    padding: 15% 5%;
+  }
+  .album-wrap {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .main-footer {
+    padding: 20px 0;
+  }
+  .navbar-fixed a:link {
+    color: #48525c;
+    text-decoration: none;
+  }
+  .navbar-fixed a:visted {
+    color: #48525c;
+    text-decoration: none;
+  }
+  .navbar-fixed a:hover {
+    color: #48525c;
+    text-decoration: none;
+  }
+  .navbar-fixed a:active {
+    color: #48525c;
+    text-decoration: none;
+  }
+}
+@media (max-width: 550px) {
+  .albums-container {
+    margin-bottom: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .albums-container {
+    margin-bottom: 50%;
+  }
+}
