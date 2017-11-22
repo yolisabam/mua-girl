@@ -169,11 +169,11 @@ nav {
 .lft {
   text-align: left;
 }
-#albums {
+#work {
   min-height: 700px;
   position: relative;
 }
-#albums h2 {
+#work h2 {
   text-align: right;
 }
 .albums-container {
