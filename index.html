@@ -42,16 +42,18 @@
 <section id="work" class="clearfix">
       <div class="wrapper clearfix">
         <h2 class="rte">WORK</h2>
-        <div class="albums-container clearfix">
+        <div class="portfolio-container clearfix">
         <!-- append JS temolate here -->
 
         </div>
+        <br>
+        <br>
       </div>
         <div class="stream-wrap clearfix">
         <div class="wrap clearfix">
           <h3>FOLLOW ME ON INSTAGRAM</h3>
           <div class="stream">
-            <a href="https://itunes.apple.com/us/artist/kendrick-lamar/id368183298" target="_blank"><img src="img/iTunes.png"></a>
+            <a href="https://www.instagram.com/Evealease/" target="_blank"><img src="img/evie-IG.png"></a>
           </div>
         </div>
         </div>
@@ -87,7 +89,7 @@
           
         </div>`;
 
-      function addAlbums() {
+      function addPorfolio() {
         var portfolio = window.__portfolio;
         var arrayLength = portfolio.length;
         for (var i = 0; i < arrayLength; i++) {
@@ -101,10 +103,10 @@
          
     
          // add to the page
-         $('.albums-container').append( html );
+         $('.portfolio-container').append( html );
         }
       }
-      addAlbums();
+      addPorfolio();
     });
     </script>
 </body>
