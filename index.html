@@ -49,7 +49,7 @@
       </div>
         <div class="stream-wrap clearfix">
         <div class="wrap clearfix">
-          <h3>STREAM</h3>
+          <h3>FOLLOW ME ON INSTAGRAM</h3>
           <div class="stream">
             <a href="https://itunes.apple.com/us/artist/kendrick-lamar/id368183298" target="_blank"><img src="img/iTunes.png"></a>
           </div>
@@ -62,6 +62,56 @@
         </div>
         </div>
 </section>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script>
+    $(document).ready(function() {
+  
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 650) {
+          $('#nav').addClass('navbar-fixed');
+        }
+        if ($(window).scrollTop() < 650) {
+          $('#nav').removeClass('navbar-fixed');
+        }
+      });
+      $('.video').click(function(){this.paused?this.play():this.pause();});
 
+      $(document).on('click', '.anchor', function(event){
+          event.preventDefault();
+
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+      });
+      var portfolioTemplate = 
+       `<div class="album-wrap">
+          <div class="album-cover-wrap">
+            <img src=" " class="album-cover">
+          </div>
+          
+        </div>`;
+
+      function addAlbums() {
+        var portfolio = window.__portfolio;
+        var arrayLength = portfolio.length;
+        for (var i = 0; i < arrayLength; i++) {
+          // convert sting to HTML
+         var html = $.parseHTML(portfolioTemplate);
+     
+         // populate all elements with properies 
+         $(html).find('.album-cover').attr('src', portfolio[i].image );
+         $(html).find('.album-title').append(portfolio[i].albumTiitle);
+         $(html).find('.album-release').append(portfolio[i].releaseDate);
+         
+    
+         // add to the page
+         $('.albums-container').append( html );
+        }
+      }
+      addAlbums();
+    });
+    </script>
 </body>
 </html>
