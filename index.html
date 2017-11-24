@@ -47,17 +47,18 @@
 
         </div>
         <br>
-        <br>
       </div>
         <div class="stream-wrap clearfix">
         <div class="wrap clearfix">
-          <h3>FOLLOW ME ON INSTAGRAM</h3>
+          <h3>CONTACT ME</h3>
+          <h4>fidesbeauty@gmail.com</h4>
           <div class="stream">
             <a href="https://www.instagram.com/Evealease/" target="_blank"><img src="img/evie-IG.png"></a>
           </div>
         </div>
         </div>
 </section>
+
  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
@@ -72,15 +73,7 @@
           $('#nav').removeClass('navbar-fixed');
         }
       });
-      $('.video').click(function(){this.paused?this.play():this.pause();});
-
-      $(document).on('click', '.anchor', function(event){
-          event.preventDefault();
-
-          $('html, body').animate({
-              scrollTop: $( $.attr(this, 'href') ).offset().top
-          }, 500);
-      });
+    
       var portfolioTemplate = 
        `<div class="album-wrap">
           <div class="album-cover-wrap">
@@ -98,8 +91,6 @@
      
          // populate all elements with properies 
          $(html).find('.album-cover').attr('src', portfolio[i].image );
-         $(html).find('.album-title').append(portfolio[i].albumTiitle);
-         $(html).find('.album-release').append(portfolio[i].releaseDate);
          
     
          // add to the page
