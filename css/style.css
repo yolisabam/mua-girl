@@ -6,14 +6,14 @@
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   margin: 0;
-  font: 1em/1.5 'Source Sans Pro', sans-serif;
+  font: 1em/1.5 'Libre Baskerville', serif;
 }
 
 h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {  
@@ -32,12 +32,12 @@ h2 {
   line-height: 1.1;
   margin: 0 0 .5em; /* 0 0 26px */
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 
 h3 {
   font-size: 1.25em; /* 20px/16px  */
-  color: #fff;
+  color: #000;
   line-height: 1.2;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -60,7 +60,7 @@ p {
   font-style: italic;
   font-weight: 300;
   line-height: 1.8;
-  color: #fff;
+  color: #000;
 }
 
 img {
@@ -110,14 +110,14 @@ a:active {
   position: relative;
   padding-top: 10px;
   height: 100vh;
-  background: linear-gradient(#fff, transparent 90%),
-              linear-gradient(0deg, #000, transparent),
-              #000 url('../img/evie-header.jpg') no-repeat center fixed;
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+              #fff url('../img/evie-header.jpg') no-repeat center fixed;
   background-size: cover;
 }
 
 .title {
-  color: #000;
+  color: #fff;
   font-size: 1.625rem; /* 26px/16px */
   letter-spacing: .065em;
   font-weight: 300;
